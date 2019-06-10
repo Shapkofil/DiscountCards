@@ -12,6 +12,12 @@ public class UIManager {
 
     public  UIManager(AppManager am){
         appManager = am;
+
+        //setting the name of the user
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+        System.out.println("Enter your name :");
+        appManager.setCustomerName(scanner.nextLine());
     }
 
     public void  mainMenu() {
@@ -21,7 +27,7 @@ public class UIManager {
 
         System.out.println("MainMenu");
         System.out.println("1.Change card");
-        System.out.println("2.Input data");
+        System.out.println("2.Enter purchase data");
         System.out.println("3.Get purchase details");
         System.out.println("4.Exit");
         System.out.print("Choose an option:");
@@ -60,10 +66,7 @@ public class UIManager {
 
     }
     private void changeCardMenu() {
-        System.out.print("Enter Customer Name:");
-        String customerName = scanner.nextLine();
-
-        System.out.print("Choose a card type. Gold,Silver or Bronze (g/s/b):");
+        System.out.println("Choose a card type. Gold,Silver or Bronze (g/s/b):");
         String control = scanner.nextLine();
 
         switch(control){
@@ -87,7 +90,7 @@ public class UIManager {
                 return;
         }
 
-        appManager.ChangeCard(control,customerName);
+        appManager.ChangeCard(control);
     }
 
     private void inputMenu(){

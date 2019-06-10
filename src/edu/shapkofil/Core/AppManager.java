@@ -12,6 +12,8 @@ public class AppManager {
     private float turnover = -1;
     private float purchaseValue = -1;
 
+    private String customerName;
+
     public AppManager(){
         run();
     }
@@ -21,7 +23,7 @@ public class AppManager {
         uiManager.mainMenu();
     }
 
-    public void ChangeCard(String control,String customerName){
+    public void ChangeCard(String control){
         switch (control){
             case "g":
                 card = new GoldCard(customerName);
@@ -40,6 +42,11 @@ public class AppManager {
             turnover = turnoverPrime;
             purchaseValue = purchaseValuePrime;
         }
+    }
+
+    public void setCustomerName(String name)
+    {
+        customerName = name;
     }
 
     public float getTurnover(){
