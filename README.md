@@ -15,4 +15,4 @@ For the actual build I’ve provided an architecture uml diagram both in here (t
 
 Architecture: 
 
-![architecture](https://drive.google.com/uc?export=view&id=1Co6fFNNgyoFcU1x9iLNcrXjRzOgbGAzF)
+![architecture](https://drive.google.com/uc?export=view&id=1QgWfkKkpNJA7xxRrAjaT6sv3tWf3hNMo)
