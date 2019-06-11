@@ -67,7 +67,7 @@ public class UIManager {
     }
     private void changeCardMenu() {
         System.out.println("Choose a card type. Gold,Silver or Bronze (g/s/b):");
-        String control = scanner.nextLine();
+        String control = scanner.next();
 
         switch(control){
             case "G":
